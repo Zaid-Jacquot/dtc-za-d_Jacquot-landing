@@ -5,21 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zaid Jacquot</title>
+    <style>
+      /*Google font*/
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+      }
+
+      /*element h1*/
+      h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        margin-top: -150px;
+      }
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        box-shadow: 20px 20px 50px 15px grey;
+        width: 300px;
+        display: block;
+        margin: auto;
+      }
+      p {
+        margin-top: 140px;
+        font-family: "Montserrat", sans-serif;
+        word-spacing: 4px;
+      }
+      .container {
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .container h2 {
+        margin-bottom: 20px;
+        color: rgb(11, 10, 10);
+        text-align: center;
+      }
+      form input,
+      form textarea {
+        display: block;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        box-shadow: 25px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+
+      form input:focus,
+      form textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px #333;
+      }
+
+      form button {
+        display: block;
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      form button:hover {
+        background-color: #555;
+      }
+      hr {
+        margin-top: 40px;
+      }
+    </style>
   </head>
   <body>
-    <img src="ZaidJacquot.jpg" width="500px" alt="Ma photo" />
+    <img src="ZaidJacquot.jpg" alt="Ma photo" />
 
     <h1>RANDRIANANTENAINA Zaïd Jacquot</h1>
     <p>
-      née le 22 Septembre 2001 à Andapa, qui se trouve au Nord Est de Madagascar
-      dans la région SAVA. J'ai obtenu mon baccalauréat série C en 2019 au Lycée
-      Mixte Andapa. Après, j'ai fait une année d'étude à la faculté des sciences
-      au departement de Mathématiques Informatiques avant d'intégrer l'ISPM en
-      suivant la formation dans le domaine de l'informatique. Bien que les
-      études me rendent à l'aise, ma distraction, et on peut dire aussi ma
-      passion c'est de jouer au football. Car je suis un fils aîné d'un ancien
-      footballeur et je crois que c'est la raison pour laquelle j'aime bien
-      jouer au foot.
+      <span style="margin-left: 60px"> Née le 22 Septembre 2001 à Andapa, </span
+      >qui se trouve au Nord Est de Madagascar dans la région SAVA. J'ai obtenu
+      mon baccalauréat série C en 2019 au Lycée Mixte Andapa. Après, j'ai fait
+      une année d'étude à la faculté des sciences au departement de
+      Mathématiques Informatiques avant d'intégrer l'ISPM en suivant la
+      formation dans le domaine de l'informatique. Bien que les études me
+      rendent à l'aise, ma distraction, et on peut dire aussi ma passion c'est
+      de jouer au football. Car je suis un fils aîné d'un ancien footballeur et
+      je crois que c'est la raison pour laquelle j'aime bien jouer au foot.
     </p>
+    <hr />
+    <!-- Formulaire de contact -->
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom" />
+        <input type="text" placeholder="Votre mail" />
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
   </body>
 </html>
